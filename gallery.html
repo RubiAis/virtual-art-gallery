@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Virtual Art Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <!-- Header -->
+    <header>
+        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="movements.html">Movements</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introducción de la galería -->
+    <section class="gallery-intro">
+        <h2>✦ Timeless Art ✦</h2>
+        <p>Discover an exclusive collection of remarkable artwork, curated with excellence.</p>
+    </section>
+
+    <!-- Galería de imágenes -->
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="Mona_Lisa_by_Leonardo_da_Vinci.jpg" alt="Art 1" onclick="openLightbox(this)">
+            <p>Mona Lisa</p>
+            <p>Leornado da Vinci, 1503-1506.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="The_Arnolfini_portrait.jpg" alt="Art 2" onclick="openLightbox(this)">
+            <p>The Arnolfini Portrait</p>
+            <p> Jan Van Eyck's, 1434.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="The-kiss.jpg" alt="Art 3" onclick="openLightbox(this)">
+            <p>The Kiss</p>
+            <p>Auguste Rodin, 1840-1917.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="Grant_Wood_-_American_Gothic.jpg" alt="Art 4" onclick="openLightbox(this)">
+        <p>American Ghotic</p>
+        <p>Grant Wood, 1930.</p>
+    </div>
+    <div class="gallery-item">
+        <img src="Girl_with_a_Pearl_Earring.jpg" alt="Art 5" onclick="openLightbox(this)">
+        <p>Girl with a Pearl Earring</p>
+        <p>Johannes Vermer, 1665. </p>
+    </div>
+    <div class="gallery-item">
+        <img src="Las_Meninas.jpg" alt="Art 6" onclick="openLightbox(this)">
+        <p>Las Meninas</p>
+        <p>Diego Velazques, 1656.</p>
+    </div>
+     <div class="gallery-item">
+            <img src="GirlBeforeAMirror (1).jpg" alt="Art 7" onclick="openLightbox(this)">
+            <p>Girl Before a Mirror</p>
+            <p>Pablo Picasso, 1932. </p>
+        </div>
+        <div class="gallery-item">
+            <img src="Picasso_The_Weeping_Woman.jpg" alt="Art 8 onclick="openLightbox(this)">
+            <p>Weeping Woman</p>
+            <p>Pablo Picasso, 1937.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Edvard_Munch_The_Scream.jpg" alt="Art 9" onclick="openLightbox(this)">
+            <p>The Scream</p>
+            <P>Edvard Munch, 1893.</P>
+        </div>
+        <div class="gallery-item">
+            <img src="the-two-fridas.jpg" alt="Art 10" onclick="openLightbox(this)">
+            <p>The Two Fridas</p>
+            <p>Frida Kahlo's, 1939.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="The_Night_Watch.jpg" alt="Art 11" onclick="openLightbox(this)">
+            <p>The Night Watch</p>
+            <p>Rembrandt van Rijn, 1642</p>
+        </div>
+        <div class="gallery-item">
+            <img src="The_Hay_Wain.jpg" alt="Art 12" onclick="openLightbox(this)">
+            <p>The Hay Wain</p>
+            <p>John Constable, 1821</p>
+        </div>
+        <div class="gallery-item">
+            <img src="The-School-of- Athens.jpg" alt="Art 13" onclick="openLightbox(this)">
+            <p>The School of Athens</p>
+            <p>Raphael, 1509-1511.</p>
+        </div>
+        <div class="gallery-item ">
+            <img src="Van_Gogh__Starry_Night_.jpg" alt="Art 14" onclick="openLightbox(this)">
+            <p>The Starry Night </p>
+            <p>Vicent van Gogh, 1889.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="The_Persistence_of_Memory.jpg" alt="Art 15" onclick="openLightbox(this)">
+            <p>The Persistence Memory</p>
+            <p>Salvador Dali, 1931.</p>
+        </div>
+        </section>
+
+
+    <!-- Lightbox para ver imágenes en grande -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+
+  
+  
+    <!-- Script para Lightbox -->
+    <script>
+        function openLightbox(img) {
+            document.getElementById("lightbox").style.display = "flex";
+            document.getElementById("lightbox-img").src = img.src;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+  
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Virtual Art Gallery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
