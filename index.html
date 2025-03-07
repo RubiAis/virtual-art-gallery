@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Virtual Art Gallery - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="movements.html">Movements</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow -->
+    <section class="slideshow-container">
+        <div class="slide fade">
+        
+            <img src="The_Last_Supper_-_Leonardo_Da_Vinci.jpg" alt="Artwork 1">
+        </div>
+        <div class="slide fade">
+            <img src="Michelangelo_-_Creation_of_Adam.jpg" alt="Artwork 2">
+        </div>
+        <div class="slide fade">
+            <img src="The_Garden_of_earthly_delights.jpg" alt="Artwork 3">
+        </div>
+        <div class="slide fade">
+            <img src="Sandro_Botticelli.jpg" alt="Artwork 4">
+        </div>
+        <div class="slide fade">
+            <img src="Venus-of-Urbino.jpg" alt="Artwork 5">
+        </div>
+    </section>
+
+    <!-- Sección de Bienvenida -->
+    <section class="intro-box">
+        <h2>Explore the Masters of Art</h2>
+        <p>Discover timeless masterpieces from different artistic movements.</p>
+        <p>Each piece tells a story, reflecting the culture, history, and emotions of its time.</p>
+    </section>
+
+    <section class="intro-box">
+        <h2>Welcome to The Virtual Art Gallery</h2>
+        <p>Step into a world where art transcends time. Our carefully curated collection features masterpieces from the Renaissance to contemporary art, offering a journey through the evolution of artistic expression.</p>
+    </section>
+
+    <section class="intro-box">
+        <h2>Discover, Learn, and Get Inspired</h2>
+        <p>Whether you are an art enthusiast, a student, or a curious explorer, our gallery provides a unique platform to experience the world's most celebrated artworks.</p>
+    </section>
+
+    <!-- Botón "Enter Gallery" -->
+    <div class="enter-gallery">
+        <a href="gallery.html" class="enter-btn">Enter Gallery</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Virtual Art Gallery. All rights reserved.</p>
+    </footer>
+
+    <!-- Script del Slideshow -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Cambia cada 4 segundos
+        }
+    </script>
+
+</body>
+</html>
