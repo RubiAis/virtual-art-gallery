@@ -9,21 +9,26 @@
 </head>
 <body>
 
+
+
+
     <!-- Header -->
     <header>
         <h1 class="main-title">THE VIRTUAL ART GALLERY</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="artists.html">Artists</a></li>
-                <li><a href="movements.html">Movements</a></li>
-                <li><a href="timeline.html">Timeline</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="navbar-toggle" onclick="toggleMenu()">Menu</div>
+            <div class="navbar-links">
+              <a href="#home">Home</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#artists">Artists</a>
+              <a href="#movements">Movements</a>  <!-- Added Movements link -->
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
     </header>
+
+    
 
     <!-- Slideshow -->
     <section class="slideshow-container">
@@ -62,10 +67,11 @@
         <p>Whether you are an art enthusiast, a student, or a curious explorer, our gallery provides a unique platform to experience the world's most celebrated artworks.</p>
     </section>
 
-    <!-- Botón "Enter Gallery" -->
-    <div class="enter-gallery">
-        <a href="gallery.html" class="enter-btn">Enter Gallery</a>
-    </div>
+   <!-- Botón "Enter Gallery" -->
+   <div class="enter-gallery">
+    <a href="gallery.html" class="enter-btn">Enter Gallery</a>
+</div>
+
 
     <!-- Footer -->
     <footer>
@@ -88,6 +94,10 @@
             setTimeout(showSlides, 4000); // Cambia cada 4 segundos
         }
     </script>
+
+
+
+
 
 </body>
 </html>
