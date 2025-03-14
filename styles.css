@@ -1,199 +1,176 @@
 /* General Styles */
 body {
-    font-family: 'Cormorant Garamond', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0B0B0B;
-    color: white;
-    text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0B0B0B;
+  color: white;
+  text-align: center;
 }
 
 /* Header */
 header {
-    background-color: black;
-    padding: 20px;
-    box-shadow: 0px 8px 16px rgba(255, 215, 0, 0.3);
+  background-color: black;
+  padding: 20px;
+  box-shadow: 0px 8px 16px rgba(255, 215, 0, 0.3);
 }
 
 /* 🔥 Título más brillante */
 .main-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px; /* Aumenté el tamaño */
-    font-weight: bold;
-    color: #E5C100; /* Dorado metálico */
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 
-        0px 0px 12px rgba(229, 193, 0, 0.9),
-        0px 0px 25px rgba(229, 193, 0, 0.6),
-        3px 3px 8px rgba(0, 0, 0, 0.5);
+  font-family: 'Playfair Display', serif;
+  font-size: 60px; /* Aumenté el tamaño */
+  font-weight: bold;
+  color: #E5C100; /* Dorado metálico */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 
+      0px 0px 12px rgba(229, 193, 0, 0.9),
+      0px 0px 25px rgba(229, 193, 0, 0.6),
+      3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Navigation */
 .nav-menu {
-    list-style: none;
-    padding: 20px 0; /* Espacio arriba y abajo */
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 60px; /* Mayor espacio debajo */
+  list-style: none;
+  padding: 20px 0; /* Espacio arriba y abajo */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px; /* Mayor espacio debajo */
 }
 
 .nav-menu a {
-    font-family: 'Cormorant Garamond', serif;
-    color: white;
-    text-decoration: none;
-    font-size: 24px; /* Texto más grande */
-    font-weight: bold;
-    padding: 12px 18px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  text-decoration: none;
+  font-size: 24px; /* Texto más grande */
+  font-weight: bold;
+  padding: 12px 18px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-menu a:hover {
-    background-color: #E5C100;
-    color: black;
+  background-color: #E5C100;
+  color: black;
 }
 
 .nav-menu a.active {
-    color: #E5C100;
+  color: #E5C100;
 }
 
 /* 📸 Slideshow */
 .slideshow-container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 70px auto 0; /* Más espacio arriba */
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 70px auto 0; /* Más espacio arriba */
+  overflow: hidden;
 }
 
 .slide {
-    display: none;
-    width: 100%;
+  display: none;
+  width: 100%;
 }
 
 .slide img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
 }
 
 /* 📜 Texto más grande en las cajas */
 .intro-box {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 215, 0, 0.6);
-    padding: 40px; /* Más padding para mayor presencia */
-    margin: 40px auto;
-    max-width: 900px; /* Caja un poco más ancha */
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 215, 0, 0.6);
+  padding: 40px; /* Más padding para mayor presencia */
+  margin: 40px auto;
+  max-width: 900px; /* Caja un poco más ancha */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.3);
 }
 
 .intro-box h2 {
-    font-size: 32px; /* Aumentamos tamaño del título */
-    color: #E5C100;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.7);
+  font-size: 32px; /* Aumentamos tamaño del título */
+  color: #E5C100;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.7);
 }
 
 .intro-box p {
-    font-size: 20px; /* Aumentamos tamaño del texto */
-    line-height: 1.6;
-    color: #ddd;
+  font-size: 20px; /* Aumentamos tamaño del texto */
+  line-height: 1.6;
+  color: #ddd;
 }
 
 /* 🔥 Botón "Enter Gallery" en Dorado Brillante */
 .enter-gallery {
-    margin: 50px 0;
+  margin: 50px 0;
 }
+
 .enter-btn {
-    font-size: 26px; /* Más grande */
-    font-weight: bold;
-    padding: 18px 50px; /* Más grande y espacioso */
-    text-decoration: none;
-    color: black;
-    background: linear-gradient(45deg, #FFD700, #E5C100); /* Igual que el título */
-    border-radius: 50px;
-    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5);
-    transition: all 0.3s ease-in-out;
-    border: 2px solid #E5C100; /* Borde dorado */
+  font-size: 26px; /* Más grande */
+  font-weight: bold;
+  padding: 18px 50px; /* Más grande y espacioso */
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(45deg, #FFD700, #E5C100); /* Igual que el título */
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #E5C100; /* Borde dorado */
 }
 
 .enter-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 6px 20px rgba(255, 215, 0, 0.7);
+  transform: scale(1.1);
+  box-shadow: 0px 6px 20px rgba(255, 215, 0, 0.7);
 }
 
-/* General Navigation Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background-color: black;
-    color: #FFD700; /* Golden color for text */
+
+@media (max-width: 768px) {
+  /* Para móviles, ajustamos la navegación */
+  .navbar {
+    text-align: center;
   }
-  
+  .navbar-links {
+    display: block;
+    width: 100%;
+  }
   .navbar a {
-    color: #FFD700;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-  }
-  
-  .navbar a:hover {
-    background-color: #E5C100;
-    border-radius: 10px;
-  }
-  
-  /* Mobile Navigation */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column; /* Stack the links vertically */
-      align-items: center;
-    }
-  
-    .navbar a {
-      padding: 12px 20px;
-      font-size: 16px;
-    }
-  
-    .navbar-toggle {
-      display: block;
-      background-color: #E5C100;
-      color: black;
-      padding: 10px 20px;
-      border-radius: 50px;
-      cursor: pointer;
-      margin-bottom: 20px;
-    }
-  
-    .navbar-links {
-      display: none; /* Hide the menu links on small screens */
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .navbar-links.show {
-      display: flex; /* Show links when menu is toggled */
-    }
-  }
-  
-  /* For larger screens */
-  @media (min-width: 769px) {
-    .navbar-links {
-      display: flex;
-      justify-content: space-around;
-      width: auto;
-    }
+    display: block;
+    padding: 10px;
+    text-align: center;
   }
 
+  /* Ajustar el tamaño de la imagen del slideshow */
+  .slideshow-container img {
+    width: 100%;
+    height: auto;
+  }
 
+  /* Hacer el botón "Enter Gallery" más grande en móvil */
+  .enter-gallery {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
 
+  /* Cambiar el título para que se ajuste al tamaño de la pantalla */
+  .main-title {
+    font-size: 2rem;
+  }
 
-footer {
-    background-color: black;
+  /* Ajustar la sección de intro-box para dispositivos pequeños */
+  .intro-box {
     padding: 15px;
-    color: white;
-    font-size: 18px; /* Texto más grande */
+  }
+}
+
+
+
+/* Footer */
+footer {
+  background-color: black;
+  padding: 15px;
+  color: white;
+  font-size: 18px; /* Texto más grande */
 }
