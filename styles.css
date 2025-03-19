@@ -127,46 +127,6 @@ header {
 }
 
 
-@media (max-width: 768px) {
-  /* Para móviles, ajustamos la navegación */
-  .navbar {
-    text-align: center;
-  }
-  .navbar-links {
-    display: block;
-    width: 100%;
-  }
-  .navbar a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-  }
-
-  /* Ajustar el tamaño de la imagen del slideshow */
-  .slideshow-container img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Hacer el botón "Enter Gallery" más grande en móvil */
-  .enter-gallery {
-    padding: 20px;
-    font-size: 1.5rem;
-  }
-
-  /* Cambiar el título para que se ajuste al tamaño de la pantalla */
-  .main-title {
-    font-size: 2rem;
-  }
-
-  /* Ajustar la sección de intro-box para dispositivos pequeños */
-  .intro-box {
-    padding: 15px;
-  }
-}
-
-
-
 /* Footer */
 footer {
   background-color: black;
@@ -174,3 +134,67 @@ footer {
   color: white;
   font-size: 18px; /* Texto más grande */
 }
+
+
+
+
+
+
+/* Menú de navegación para dispositivos grandes */
+.navbar-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* Estilos para el menú en dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Ocultar los enlaces de navegación por defecto */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Mostrar el menú cuando el botón es presionado */
+  .navbar.active .navbar-links {
+    display: block;
+  }
+
+  .navbar-toggle {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+/* Botón de navegación */
+.navbar-toggle {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  background-color: #333;
+  text-align: center;
+}
+
+/* Enlaces de navegación */
+.navbar-links a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
