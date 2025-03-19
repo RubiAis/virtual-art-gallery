@@ -12,18 +12,17 @@
     <!-- Header -->
     <header>
         <h1 class="main-title">THE VIRTUAL ART GALLERY</h1>
-        <div class="navbar">
-            <div class="navbar-toggle" onclick="toggleMenu()">Menu</div>
-            <div class="navbar-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="artists.html">Artists</a>
-                <a href="movements.html">Movements</a>
-                <a href="timeline.html">Timeline</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="movements.html">Movements</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Slideshow -->
@@ -88,14 +87,6 @@
             setTimeout(showSlides, 4000); // Cambia cada 4 segundos
         }
     </script>
-
-
-<script>
-    function toggleMenu() {
-      const navbar = document.querySelector('.navbar');
-      navbar.classList.toggle('active');
-    }
-  </script>
 
 </body>
 </html>
