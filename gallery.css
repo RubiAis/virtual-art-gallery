@@ -109,42 +109,17 @@ header {
     line-height: 1.6;
 }
 
-/* Estilo general para las imágenes */
-.gallery-item img {
-    width: 100%; /* Asegura que las imágenes ocupen el 100% del espacio disponible */
-    height: auto; /* Mantiene la relación de aspecto */
-    object-fit: cover; /* Recorta las imágenes de forma que llenen el contenedor sin distorsionarse */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado entre las imágenes */
-  }
-  
-  /* Estilo de la galería en una cuadrícula */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta el número de columnas según el ancho */
-    gap: 20px; /* Espacio entre las imágenes */
-    max-width: 1200px; /* Máximo ancho de la galería */
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Ajuste para dispositivos móviles */
-  @media (max-width: 768px) {
-    .gallery {
-      grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
-    }
-  
-    .gallery-item img {
-      object-fit: contain; /* Asegura que las imágenes se ajusten sin recortar */
-      max-width: 100%; /* Limita el tamaño máximo de las imágenes */
-    }
-  
-    .gallery-item p {
-      font-size: 16px; /* Reduce el tamaño del texto en dispositivos pequeños */
-      text-align: center; /* Centra el texto debajo de la imagen */
-    }
-  }
 
+
+/* 📷 Galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
 
 /* 🎨 Estilos de los Marcos */
 .gallery-item {
@@ -157,6 +132,17 @@ header {
     box-shadow: 0px 6px 15px rgba(255, 223, 186, 0.3);
 }
 
+/* 📸 Estilos de Imágenes */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    padding: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
 
 /* Texto en la galería */
 .gallery-item p {
