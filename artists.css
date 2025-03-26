@@ -220,6 +220,11 @@ header {
     border: 2px solid #E5C100; /* Borde dorado */
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(255, 215, 0, 0.5); /* Sombra elegante */
+    width: 100%;
+    max-width: 327px;
+    height: auto;
+    min-height: 200px;  
+    max-height: 300px;
 }
 
 /* Eliminar el fondo gris al hacer clic en un enlace */
