@@ -223,8 +223,8 @@ header {
     width: 100%;
     max-width: 327px;
     height: auto;
-    min-height: 200px;  
-    max-height: 300px;
+    min-height: 100px;  
+    max-height: 200px;
 }
 
 /* Eliminar el fondo gris al hacer clic en un enlace */
