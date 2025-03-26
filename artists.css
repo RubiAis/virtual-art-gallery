@@ -200,19 +200,13 @@ header {
     margin: 20px auto;
 }
 
-
-
 #hidden-artist {
-    display: none;  /* Se oculta al inicio */
+    display: none; /* Se oculta al inicio */
     width: 100%;
-    max-width: 350px; /* Igual que el resto de las tarjetas */
-    min-height: 250px; /* Establece una altura mínima */
-    height: auto; /* Ajusta la altura de acuerdo al contenido */
-    margin: 20px auto; /* Centrado */
-    overflow: hidden; /* Evita que el contenido se desborde */
+    max-width: 332px; /* Ajusta el tamaño */
+    margin: 20px auto; /* Centrado horizontalmente */
+    text-align: center;
 }
-
-
 
 #hidden-artist .artist-card {
     display: flex;
@@ -225,9 +219,8 @@ header {
     border: 2px solid #E5C100; /* Borde dorado */
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(255, 215, 0, 0.5); /* Sombra elegante */
-
-    
 }
+
 
 /* Eliminar el fondo gris al hacer clic en un enlace */
 .nav-menu a:focus, .nav-menu a:active {
@@ -239,11 +232,6 @@ header {
 .nav-menu a:focus, .nav-menu a:active {
     color: #E5C100; /* Cambia el color del texto cuando está en foco */
 }
-
-
-
-
-
 
 
 /* Footer */
