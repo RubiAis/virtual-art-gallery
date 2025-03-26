@@ -207,6 +207,7 @@ header {
     max-width: 327px; /* Ajusta el tamaño */
     margin: 20px auto; /* Centrado horizontalmente */
     text-align: center;
+    height: auto;
 }
 
 #hidden-artist .artist-card {
@@ -220,11 +221,8 @@ header {
     border: 2px solid #E5C100; /* Borde dorado */
     border-radius: 10px;
     box-shadow: 0px 10px 20px rgba(255, 215, 0, 0.5); /* Sombra elegante */
-    width: 100%;
-    max-width: 327px;
     height: auto;
-    min-height: 100px;  
-    max-height: 200px;
+    
 }
 
 /* Eliminar el fondo gris al hacer clic en un enlace */
