@@ -201,14 +201,18 @@ header {
 }
 
 
+
 #hidden-artist {
-    display: none; /* Se oculta al inicio */
+    display: none;  /* Se oculta al inicio */
     width: 100%;
-    max-width: 320px; /* Ajusta el tamaño */
-    margin: 20px auto; /* Centrado horizontalmente */
-    text-align: center;
-    height: auto;
+    max-width: 350px; /* Igual que el resto de las tarjetas */
+    min-height: 250px; /* Establece una altura mínima */
+    height: auto; /* Ajusta la altura de acuerdo al contenido */
+    margin: 20px auto; /* Centrado */
+    overflow: hidden; /* Evita que el contenido se desborde */
 }
+
+
 
 #hidden-artist .artist-card {
     display: flex;
