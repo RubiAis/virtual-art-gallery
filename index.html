@@ -9,12 +9,12 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1>
-        <nav>
+        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1> <!-- Título aquí -->
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="navbar">
             <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="artists.html">Artists</a></li>
                 <li><a href="movements.html">Movements</a></li>
@@ -86,7 +86,14 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 4000); // Cambia cada 4 segundos
         }
+        function toggleMenu() {
+         const navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+        }
+
     </script>
 
+       <script src="scripts.js"></script> <!-- Asegúrate de que el archivo JS esté bien enlazado -->
+    
 </body>
 </html>

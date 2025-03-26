@@ -59,6 +59,21 @@ header {
   color: #E5C100;
 }
 
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column; /* Cambia la dirección de la barra de navegación a columna */
+    margin-bottom: 20px; /* Reduce el espacio inferior */
+  }
+
+  .nav-menu a {
+    font-size: 20px; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    padding: 10px 15px; /* Ajusta el espacio dentro de los enlaces */
+  }
+}
+
+
 /* 📸 Slideshow */
 .slideshow-container {
   position: relative;
@@ -133,3 +148,4 @@ footer {
   color: white;
   font-size: 18px; /* Texto más grande */
 }
+

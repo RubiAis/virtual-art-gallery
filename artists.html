@@ -10,13 +10,15 @@
 </head>
 <body>
 
+  
     <header>
-        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1>
-        <nav>
+        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1> <!-- Título aquí -->
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="navbar">
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="artists.html" class="active">Artists</a></li>
+                <li><a href="artists.html">Artists</a></li>
                 <li><a href="movements.html">Movements</a></li>
                 <li><a href="timeline.html">Timeline</a></li>
                 <li><a href="about.html">About</a></li>
@@ -24,8 +26,8 @@
             </ul>
         </nav>
     </header>
-
-    <section class="artists-intro">
+    
+<section class="artists-intro">
         <h2>✦ Meet the Masters of Art ✦</h2>
         <p>Explore the lives and works of the most influential artists in history.</p>
     </section>
@@ -157,3 +159,5 @@
             <footer>
         <p>&copy; 2025 The Virtual Art Gallery. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script> <!-- Asegúrate de que el archivo JS esté bien enlazado -->
