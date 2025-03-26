@@ -206,7 +206,7 @@ header {
 #hidden-artist {
     display: none; /* Se oculta al inicio */
     width: 100%;
-    max-width: 332px; /* Ajusta el tamaño */
+    max-width: 250px; /* Ajusta el tamaño */
     margin: 20px auto; /* Centrado horizontalmente */
     text-align: center;
 }
