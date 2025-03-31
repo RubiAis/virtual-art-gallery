@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1> <!-- Título aquí -->
+        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1> 
         <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
         <nav class="navbar">
             <ul class="nav-menu">
@@ -25,124 +25,99 @@
         </nav>
     </header>
 
-    <!-- Introducción de la galería -->
+    <div class="nav-shadow"></div>
+
     <section class="gallery-intro">
-        <h2>✦ Timeless Art ✦</h2>
-        <p>Discover an exclusive collection of remarkable artwork, curated with excellence.</p>
-    </section>
+        <h2>✦ TIMELESS ART ✦</h2>
+        <p>Discover the evolution of artistic styles that shaped history.</p>
+      </section>
+    
+      <section class="gallery-container">
+        <div class="gallery-item">
+          <img src="Mona_Lisa_by_Leonardo_da_Vinci.jpg" alt="Art 1">
+          <p>Mona Lisa<br><span>Leonardo da Vinci, 1503–1506.</span></p>
+        </div> 
 
-    <!-- Galería de imágenes -->
-    <section class="gallery">
-        <div class="gallery-item">
-            <img src="Mona_Lisa_by_Leonardo_da_Vinci.jpg" alt="Art 1" onclick="openLightbox(this)">
-            <p>Mona Lisa</p>
-            <p>Leornado da Vinci, 1503-1506.</p>
-        </div>
-        <div class="gallery-item">
-            <img src="The_Arnolfini_portrait.jpg" alt="Art 2" onclick="openLightbox(this)">
-            <p>The Arnolfini Portrait</p>
-            <p> Jan Van Eyck's, 1434.</p>
-        </div>
-        <div class="gallery-item">
-            <img src="The-kiss.jpg" alt="Art 3" onclick="openLightbox(this)">
-            <p>The Kiss</p>
-            <p>Auguste Rodin, 1840-1917.</p>
-        </div>
-    </div>
-    <div class="gallery-item">
-        <img src="Grant_Wood_-_American_Gothic.jpg" alt="Art 1" onclick="openLightbox(this)">
-        <p>American Ghotic</p>
-        <p>Grant Wood, 1930.</p>
-    </div>
-    <div class="gallery-item">
-        <img src="Girl_with_a_Pearl_Earring.jpg" alt="Art 2" onclick="openLightbox(this)">
-        <p>Girl with a Pearl Earring</p>
-        <p>Johannes Vermer, 1665. </p>
-    </div>
-    <div class="gallery-item">
-        <img src="Las_Meninas.jpg" alt="Art 3" onclick="openLightbox(this)">
-        <p>Las Meninas</p>
-        <p>Diego Velazques, 1656.</p>
-    </div>
-     <div class="gallery-item">
-            <img src="GirlBeforeAMirror (1).jpg" alt="Art 1" onclick="openLightbox(this)">
-            <p>Girl Before a Mirror</p>
-            <p>Pablo Picasso, 1932. </p>
-        </div>
-        <div class="gallery-item">
-            <img src="Picasso_The_Weeping_Woman.jpg" alt="Art 2" onclick="openLightbox(this)">
-            <p>Weeping Woman</p>
-            <p>Pablo Picasso, 1937.</p>
-        </div>
-        <div class="gallery-item">
-            <img src="Edvard_Munch_The_Scream.jpg" alt="Art 3" onclick="openLightbox(this)">
-            <p>The Scream</p>
-            <P>Edvard Munch, 1893.</P>
-        </div>
-        <div class="gallery-item">
-            <img src="the-two-fridas.jpg" alt="Art 1" onclick="openLightbox(this)">
-            <p>The Two Fridas</p>
-            <p>Frida Kahlo's, 1939.</p>
-        </div>
-        <div class="gallery-item">
-            <img src="The_Night_Watch.jpg" alt="Art 2" onclick="openLightbox(this)">
-            <p>The Night Watch</p>
-            <p>Rembrandt van Rijn, 1642</p>
-        </div>
-        <div class="gallery-item">
-            <img src="The_Hay_Wain.jpg" alt="Art 3" onclick="openLightbox(this)">
-            <p>The Hay Wain</p>
-            <p>John Constable, 1821</p>
-        </div>
-        <div class="gallery-item">
-            <img src="The-School-of- Athens.jpg" alt="Art 1" onclick="openLightbox(this)">
-            <p>The School of Athens</p>
-            <p>Raphael, 1509-1511.</p>
-        </div>
-        <div class="gallery-item ">
-            <img src="Van_Gogh__Starry_Night_.jpg" alt="Art 2" onclick="openLightbox(this)">
-            <p>The Starry Night </p>
-            <p>Vicent van Gogh, 1889.</p>
-        </div>
-        <div class="gallery-item">
-            <img src="The_Persistence_of_Memory.jpg" alt="Art 3" onclick="openLightbox(this)">
-            <p>The Persistence Memory</p>
-            <p>Salvador Dali, 1931.</p>
-            
-        </div>
+      
 
-    </section>
+      <div class="gallery-item">
+        <img src="The_Arnolfini_portrait.jpg" alt="Art 2">
+        <p>The Arnolfini Portrait<br><span>Jan van Eyck, 1434</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="The-kiss.jpg" alt="Art 3">
+        <p>The Kiss<br><span>Auguste Rodin, 1882</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="Grant_Wood_-_American_Gothic.jpg" alt="Art 4">
+        <p>American Gothic<br><span>Grant Wood, 1930</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="Girl_with_a_Pearl_Earring.jpg" alt="Art 5">
+        <p>Girl with a Pearl Earring<br><span>Johannes Vermeer, 1665</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="Las_Meninas.jpg" alt="Art 6">
+        <p>Las Meninas<br><span>Diego Velázquez, 1656</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="Girl_Before_A_Mirror.jpg" alt="Art 7">
+        <p>Girl Before a Mirror<br><span>Pablo Picasso, 1932</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="Picasso_The_Weeping_Woman.jpg" alt="Art 8">
+        <p>Weeping Woman<br><span>Pablo Picasso, 1937</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="Edvard_Munch_The_Scream.jpg" alt="Art 9">
+        <p>The Scream<br><span>Edvard Munch, 1893</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="the-two-fridas.jpg" alt="Art 10">
+        <p>The Two Fridas<br><span>Frida Kahlo, 1939</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="The_Night_Watch.jpg" alt="Art 11">
+        <p>The Night Watch<br><span>Rembrandt, 1642</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="The_Hay_Wain.jpg" alt="Art 12">
+        <p>The Hay Wain<br><span>John Constable, 1821</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="The-School-of-Athens.jpg" alt="Art 13">
+        <p>The School of Athens<br><span>Raphael, 1511</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="Van_Gogh__Starry_Night_.jpg" alt="Art 14">
+        <p>Starry Night<br><span>Vincent van Gogh, 1889</span></p>
+      </div>
+      <div class="gallery-item">
+        <img src="The_Persistence_of_Memory.jpg" alt="Art 15">
+        <p>The Persistence of Memory<br><span>Salvador Dalí, 1931</span></p>
+      </div>
+      </section>
+       
 
-   
-   
-   
-   
-   
-   
-    <!-- Lightbox para ver imágenes en grande -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <img id="lightbox-img">
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 The Virtual Art Gallery. All rights reserved.</p>
-    </footer>
-
-    <!-- Script para Lightbox -->
-    <script>
-        function openLightbox(img) {
-            document.getElementById("lightbox").style.display = "flex";
-            document.getElementById("lightbox-img").src = img.src;
-        }
-
-        function closeLightbox() {
-            document.getElementById("lightbox").style.display = "none";
-        }
-    </script>
-
-
-    <script src="scripts.js"></script> <!-- Asegúrate de que el archivo JS esté bien enlazado -->
-
-</body>
-</html>
+      <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="placeholder.jpg" alt="Artwork enlarged">
+      </div>
+  
+  <footer>
+    <p>&copy; 2025 The Virtual Art Gallery. All rights reserved.</p>
+  </footer>
+  
+  
+  <script>
+    function openLightbox(img) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = img.src;
+    }
+  
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+  </script>
+  
+  </body>
+  </html>
