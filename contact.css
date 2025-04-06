@@ -61,18 +61,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* añade esto */
+    min-height: 100vh;      /* añade esto */
     padding: 60px 20px;
   }
-  
   .contact-box {
-    background-color:rgba(26, 26, 26, 0.95);
+    background-color: rgba(26, 26, 26, 0.95);
     border: 2px solid rgba(255, 215, 0, 0.5);
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
     border-radius: 12px;
-    max-width: 800px;
-    padding: 40px 30px;
+    width: 100%;              /* Que use todo el ancho disponible */
+    max-width: 900px;        /* Puedes subirlo más si lo quieres más ancho, como 1100px */
+    padding: 60px 50px;       /* Más espacio dentro */
     text-align: center;
     margin-top: 55px;
+    box-sizing: border-box;   /* Importante para que el padding no lo desborde */
   }
   
   .contact-title {
@@ -90,6 +93,13 @@ body {
     margin-bottom: 30px;
     line-height: 1.6;
   }
+
+  .contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
   .contact-form input,
   .contact-form textarea {
@@ -100,15 +110,15 @@ body {
     border: none;
     font-size: 16px;
     font-family: 'Playfair Display', serif;
+    box-sizing: border-box;   /* Esto asegura que padding no afecte el tamaño total */
   }
-  
   .contact-form textarea {
     resize: vertical;
     height: 120px;
   }
   
   .contact-form button {
-    background-color: #FFD700;
+    background-color: #FFDF00;
     color: black;
     font-family: 'Playfair Display', serif;
     border: none;
@@ -116,13 +126,17 @@ body {
     border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px;
     transition: background-color 0.3s ease;
+    width: 200px;
+    margin: 20px auto 0;
   }
   
   .contact-form button:hover {
     background-color: #e6c200;
   }
+
+  
+ 
   
   .contact-credit {
     margin-top: 30px;
