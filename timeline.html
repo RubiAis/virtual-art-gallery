@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Virtual Art Gallery - Artists</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <header>
+        <h1 class="main-title">THE VIRTUAL ART GALLERY</h1> 
+        <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="movements.html">Movements</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+
+    
+    
+        <section class="timeline-section">
+            <h2 class="fancy-title">✧ ART HISTORY TIMELINE ✧</h2>
+          
+            <div class="intro-box">
+              <h3 class="movement-title">1400s — Renaissance</h3>
+              <p>
+                A cultural rebirth that celebrated classical art, architecture, and the beauty of the human form.
+                Artists like Botticelli and Michelangelo elevated artistic expression through harmony, anatomy, and perspective.
+              </p>
+            </div>
+          
+            <div class="intro-box">
+              <h3 class="movement-title">1700s — Romanticism</h3>
+              <p>
+                An emotional and imaginative movement focused on nature, beauty, and individual expression.
+                Artists sought to capture deep feelings, heroic themes, and dramatic moments in time.
+              </p>
+            </div>
+          
+            <div class="intro-box">
+              <h3 class="movement-title">1800s — Impressionism</h3>
+              <p>
+                A break from tradition using light, movement, and color to capture moments in time.
+                Painters like Monet and Degas used quick brushstrokes to reflect modern life and fleeting beauty.
+              </p>
+            </div>
+          
+            <div class="intro-box">
+              <h3 class="movement-title">1900s — Surrealism</h3>
+              <p>
+                A dreamlike movement that explored the subconscious through strange, symbolic imagery.
+                Surrealists like Dalí and Magritte challenged reality through fantastical compositions.
+              </p>
+            </div>
+            <div class="intro-box">
+                <h3 class="movement-title">1300s – Gothic Art</h3>
+                <p>A style that flourished in medieval Europe, characterized by religious themes, elongated figures, and dramatic expressions. Artists like Giotto paved the way for the Renaissance.</p>
+              </div>
+              
+              <div class="intro-box">
+                <h3 class="movement-title">1500s – Mannerism</h3>
+                <p>A reaction to the harmony of the Renaissance, Mannerism featured exaggerated poses, unusual scale, and bold colors. Artists like El Greco created emotionally intense works.</p>
+              </div>
+              
+              <div class="intro-box">
+                <h3 class="movement-title">1600s – Baroque</h3>
+                <p>Known for its drama, movement, and grandeur. Baroque art often focused on intense light and shadow, with artists like Caravaggio and Rembrandt leading the way.</p>
+              </div>
+              
+              <div class="intro-box">
+                <h3 class="movement-title">1700s – Neoclassicism</h3>
+                <p>Inspired by ancient Greece and Rome, this movement emphasized order, logic, and heroic themes. Artists like Jacques-Louis David created works full of moral seriousness.</p>
+              </div>
+              
+              <div class="intro-box">
+                <h3 class="movement-title">1950s – Abstract Expressionism</h3>
+                <p>Centered in New York, this post-war movement focused on spontaneous, expressive brushwork. Jackson Pollock and Mark Rothko are iconic figures of this abstract style.</p>
+              </div>
+              
+              <div class="intro-box">
+                <h3 class="movement-title">1960s – Pop Art</h3>
+                <p>A fun and colorful movement that drew inspiration from popular culture, advertising, and comics. Andy Warhol and Roy Lichtenstein made everyday objects into high art.</p>
+              </div>
+
+          </section>
+
+
+      <footer>
+        <p>&copy; 2025 The Virtual Art Gallery. All rights reserved.</p>
+      </footer>
+    
+    
+      <script>
+        function scrollToTop() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      
+        window.addEventListener('scroll', function () {
+          const btn = document.querySelector('.back-to-top');
+          if (window.scrollY > 300) {
+            btn.style.display = 'block';
+          } else {
+            btn.style.display = 'none';
+          }
+        });
+      </script>
+       
+      <button onclick="scrollToTop()" class="back-to-top">Back to Top</button>
+      
+    </body>
+    </html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Virtual Art Gallery | Movements</title>
+  <link rel="stylesheet" href="movements.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <header>
+    <h1 class="main-title">THE VIRTUAL ART GALLERY</h1> 
+    <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="movements.html">Movements</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class="section-header">
+  <h1 class="welcome-title"> WELCOME TO ART MOVEMENTS </h1>
+  <p class="welcome-subtitle">Discover the evolution of artistic styles that shaped history</p>
+</div>
+
+
+  
+<div class="slideshow-shadow">
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="Liberty-leading-the-people.jpg" alt="Liberty Leading the People">
+      <div class="caption-text">Romanticism</div>
+    </div>
+    <div class="slide fade">
+      <img src="Water-Lilies.webp" alt="Water Lilies by Monet">
+      <div class="caption-text">Impressionism</div>
+    </div>
+    <div class="slide fade">
+      <img src="primavera.jpg" alt="Primavera by Botticelli">
+      <div class="caption-text">Renaissance</div>
+    </div>
+  </div>
+
+  <div class="dots">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+
+
+
+
+<section class="intro-box">
+  <h2>Impressionism</h2>
+  <p>
+    Step into the late 19th century, where artists like Monet and Degas broke away from tradition to capture the essence of light, color, and fleeting moments.
+    This movement transformed how we see the world—through quick brushstrokes, vibrant tones, and scenes of everyday life.
+  </p>
+  <p>
+    It was a revolution of perception, inviting viewers to feel rather than simply observe. Impressionism opened the path for artistic freedom and the modern spirit of creativity.
+  </p>
+</section>
+
+<section class="intro-box">
+  <h2>Renaissance</h2>
+  <p>
+    Journey back to the 14th–17th centuries, a time of rebirth and rediscovery. The Renaissance celebrated classical ideals, humanism, and the beauty of the natural world.
+    Artists like Botticelli and Michelangelo elevated art through perspective, anatomy, and grace.
+  </p>
+  <p>
+    Their masterpieces reflect the harmony between science and spirit, shaping the foundation of Western art as we know it today.
+  </p>
+</section>
+
+<section class="intro-box">
+  <h2>Romanticism</h2>
+  <p>
+    Experience the emotional depth and wild beauty of the Romantic era. In the late 18th century, artists like Delacroix and Turner broke free from reason and embraced imagination, nature, and personal expression.
+  </p>
+  <p>
+    Romanticism gave voice to passion, mystery, and individuality—bringing raw feeling to the forefront of visual storytelling.
+  </p>
+</section>
+
+
+
+<section class="video-section">
+  <p class="watch-more-text">Watch more about Impressionism</p>
+  <div class="video-container">
+    <iframe width="300%" height="500" src="https://www.youtube.com/embed/3_fOM3Fy37w" title="Waldemar Explores Pissarro, Monet, Renoir and Bazille" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+
+<div class="poem-section">
+  <div id="poem-line" class="poem-line"></div>
+ <div class="poem-author">— Rubi Aispuro</div>
+</div>
+
+
+   <footer>
+    <p>&copy; 2025 The Virtual Art Gallery. All rights reserved.</p>
+  </footer>
+
+
+
+
+
+  <script>
+    const poem = "In golden lines the silence speaks, through timeless art the spirit peaks.";
+    let index = 0;
+  
+    function typePoem() {
+      const element = document.getElementById("poem-line");
+      if (index < poem.length) {
+        element.innerHTML += poem.charAt(index);
+        index++;
+        setTimeout(typePoem, 80);
+      }
+    }
+  
+    window.addEventListener("DOMContentLoaded", typePoem);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}   
+    for (i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+    slides[slideIndex - 1].style.display = "block"; 
+    dots[slideIndex - 1].classList.add("active");
+    setTimeout(showSlides, 4000); 
+  }
+</script>
+
+
+
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  window.addEventListener('scroll', function () {
+    const btn = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+</script>
+ 
+<button onclick="scrollToTop()" class="back-to-top">Back to Top</button>
+
+
+
+</body>
+</html>
