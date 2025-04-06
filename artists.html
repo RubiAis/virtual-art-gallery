@@ -26,11 +26,10 @@
         </nav>
     </header>
 
-<section class="artists-intro">
-        <h2>✦ Meet the Masters of Art ✦</h2>
-        <p>Explore the lives and works of the most influential artists in history.</p>
-    </section>
-
+    <section class="artist-intro">
+        <h2 class="artist-title">MEET THE MASTERS OF ART</h2>
+        <p class="artist-subtitle">Explore the lives and works of the most influential artists in history.</p>
+      </section>
 
 
     <section class="artists-container">
@@ -158,4 +157,25 @@
 
     <script src="scripts.js"></script>
 
+
+<script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  
+    window.addEventListener('scroll', function () {
+      const btn = document.querySelector('.back-to-top');
+      if (window.scrollY > 300) {
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
+      }
+    });
+  </script>
+   
+  <button onclick="scrollToTop()" class="back-to-top">Back to Top</button>
+  
+</body>
+</html>
+  
    

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Virtual Art Gallery</title>
     <link rel="stylesheet" href="gallery.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -27,10 +27,12 @@
 
     <div class="nav-shadow"></div>
 
-    <section class="gallery-intro">
-        <h2>✦ TIMELESS ART ✦</h2>
-        <p>Discover the evolution of artistic styles that shaped history.</p>
-      </section>
+   
+    <div class="section-header">
+      <h2 class="gallery-title">TIMELESS ART</h2>
+      <p class="gallery-subtitle">Discover the evolution of artistic styles that shaped history.</p>
+    </div>
+
     
       <section class="gallery-container">
         <div class="gallery-item">
@@ -97,7 +99,7 @@
         <p>The Persistence of Memory<br><span>Salvador Dalí, 1931</span></p>
       </div>
       </section>
-       
+
 
       <div id="lightbox" onclick="closeLightbox()">
         <img id="lightbox-img" src="placeholder.jpg" alt="Artwork enlarged">
@@ -107,7 +109,7 @@
     <p>&copy; 2025 The Virtual Art Gallery. All rights reserved.</p>
   </footer>
   
-  
+
   <script>
     function openLightbox(img) {
       document.getElementById("lightbox").style.display = "flex";
@@ -118,6 +120,26 @@
       document.getElementById("lightbox").style.display = "none";
     }
   </script>
-  
+
+
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  window.addEventListener('scroll', function () {
+    const btn = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+</script>
+ 
+<button onclick="scrollToTop()" class="back-to-top">Back to Top</button>
+
+
   </body>
   </html>

@@ -11,7 +11,7 @@ body {
 header {
   background-color: black;
   padding: 20px;
-  box-shadow: 0px 8px 16px rgba(255, 215, 0, 0.3);
+  box-shadow: 0px 16px 16px rgba(255, 215, 0, 0.3);
 }
 
 
@@ -102,14 +102,14 @@ header {
   object-position: center;
   border-radius: 10px;
   border: 0px solid #978104; 
-  box-shadow: 0 0 15px rgba(229, 193, 0, 0.4);
+  box-shadow: 0 0 17px rgba(229, 193, 0, 0.4);
   background-color: #111;
   margin: 0 auto;
   display: block;
 }
 
 .intro-box {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(26, 26, 26, 0.95);
   border: 2px solid rgba(255, 215, 0, 0.6);
   padding: 40px; 
   margin: 40px auto;
@@ -156,12 +156,12 @@ header {
 
 
 .featured-title {
-  color: #FFD700; /* dorado brillante */
+  color: #FFD700; 
   font-size: 36px;
   font-weight: bold;
   text-align: center;
   text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
-  margin-top: 40px;
+  margin-top: 30px;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
