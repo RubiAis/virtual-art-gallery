@@ -61,8 +61,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* añade esto */
-    min-height: 100vh;      /* añade esto */
+    flex-direction: column; 
+    min-height: 100vh;      
     padding: 60px 20px;
   }
   .contact-box {
@@ -70,12 +70,12 @@ body {
     border: 2px solid rgba(255, 215, 0, 0.5);
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
     border-radius: 12px;
-    width: 100%;              /* Que use todo el ancho disponible */
-    max-width: 900px;        /* Puedes subirlo más si lo quieres más ancho, como 1100px */
-    padding: 60px 50px;       /* Más espacio dentro */
+    width: 100%;             
+    max-width: 900px;        
+    padding: 60px 50px;       
     text-align: center;
     margin-top: 55px;
-    box-sizing: border-box;   /* Importante para que el padding no lo desborde */
+    box-sizing: border-box;   
   }
   
   .contact-title {
@@ -110,7 +110,7 @@ body {
     border: none;
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    box-sizing: border-box;   /* Esto asegura que padding no afecte el tamaño total */
+    box-sizing: border-box;   
   }
   .contact-form textarea {
     resize: vertical;
@@ -126,16 +126,15 @@ body {
     border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
     width: 200px;
     margin: 20px auto 0;
   }
   
   .contact-form button:hover {
     background-color: #e6c200;
+    transform: scale(1.1); 
   }
-
-  
  
   
   .contact-credit {
@@ -153,4 +152,19 @@ body {
   .Rubi-Aispuro-name:hover {
     color: #fff;
     text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  }
+
+  .contact-title {
+    animation: fadeInTop 1s ease-out;
+  }
+  
+  @keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
