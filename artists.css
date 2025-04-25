@@ -14,49 +14,33 @@ header {
     box-shadow: 0px 8px 17px rgba(255, 215, 0, 0.3);
 }
 
-
-
-  .artist-intro {
-    background-color: rgba(26, 26, 26, 0.95);
-    color: #FFD700;
+.artists-intro {
+    background-color: rgba(26, 26, 26, 0.95); 
+    color: #E5C100; 
     text-align: center;
-    padding: 80px 60px;
-    border-radius: 15px;
-    margin: 30px auto;
-    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.4);
-    max-width: 1205px;
-    font-family: 'Cormorant Garamond', serif;
-  }
-
-
-
-  .artist-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 50px;
-    font-weight: bold;
-    color: #FFD700;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow:
-      0 0 10px rgba(255, 215, 0, 0.6),
-      0 0 20px rgba(255, 215, 0, 0.4),
-      3px 3px 8px rgba(0, 0, 0, 0.5);
-    margin-bottom: 15px;
-  }
-  
-  .artist-subtitle {
-   font-family: 'Cormorant Garamond', serif;
-font-size: 25px;
-color: white;
-text-align: center;
-text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
-margin: 0 auto 20px auto;
-margin-top: 60px;
-width: 90%;
-max-width: 800px;
+    padding: 80px 60px; 
+    border-radius: 15px; 
+    margin: 30px auto; 
+    box-shadow: 0px 4px 20px rgba(255, 215, 0, 0.4); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%; 
+    max-width: 1203px; 
+    height: auto; 
+    min-height: 300px; 
 }
 
 
+
+.artists-intro h2 {
+    font-size: 55px !important; 
+    font-weight: bold !important;
+    color: #E5C100 !important; 
+    text-transform: uppercase !important;
+    text-shadow: 0px 0px 20px rgba(255, 215, 0, 0.8); 
+}
 
 
 .artists-intro p {
@@ -113,6 +97,19 @@ max-width: 800px;
       padding: 10px 15px; 
     }
   }
+
+.artist-intro h2 {
+    font-size: 42px !important; 
+    font-weight: bold;
+    color: #E5C100 !important; 
+    text-transform: none; 
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 20px rgba(255, 215, 0, 1),
+                 0px 0px 30px rgba(255, 215, 0, 0.8),
+                 3px 3px 8px rgba(0, 0, 0, 0.5) !important; 
+    padding: 15px 0; 
+}
 
 
 
@@ -205,7 +202,7 @@ max-width: 800px;
 #hidden-artist {
     display: none; 
     width: 100%;
-    max-width: 332px; 
+    max-width: 325px; 
     margin: 20px auto; 
     text-align: center;
 }
@@ -238,14 +235,14 @@ max-width: 800px;
 
 
 footer {
-    background-color: #070606;
+    background-color: #1c1c1c;
     padding: 15px;
     color: white;
     font-size: 18px;
 }
 
 .back-to-top {
-    display: none; /* oculto por defecto */
+    display: none; 
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -266,4 +263,15 @@ footer {
     background-color: #e6c200;
     transform: scale(1.05);
   }
+
+
+
+
+
+
+
+
+
+
+
 
