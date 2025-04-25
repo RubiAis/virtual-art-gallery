@@ -7,15 +7,11 @@ body {
   text-align: center;
 }
 
-
 header {
   background-color: black;
   padding: 20px;
   box-shadow: 0px 8px 16px rgba(255, 215, 0, 0.3);
 }
-
-
-
 
 .section-header {
   background-color: rgba(26, 26, 26, 0.95);
@@ -29,6 +25,7 @@ header {
   align-items: center;
   text-align: center;
   max-width: 1205px;
+  min-height: 250px; 
 }
 
 
@@ -43,7 +40,7 @@ header {
 
 .gallery-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 50px;
+  font-size: 53px;
   font-weight: bold;
   color: #FFD700;
   text-align: center;
@@ -70,7 +67,6 @@ header {
       3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-
 .gallery-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-size: 25px;
@@ -83,15 +79,7 @@ header {
   margin-bottom: 50px;
 }
 
-  
-  
-  
-  
- 
-
-
-
-.nav-menu {
+  .nav-menu {
   list-style: none;
   padding: 20px 0; 
   display: flex;
@@ -119,7 +107,6 @@ header {
 .nav-menu a.active {
   color: #E5C100;
 }
-
 
 
 @media (max-width: 768px) {
@@ -155,7 +142,6 @@ header {
   text-shadow: 0 0 15px #FFD700;
 }
 
-
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -164,7 +150,6 @@ header {
   margin: 80px auto;
   padding: 20px;
 }
-
 
 .gallery-item {
   background-color: #181717;
@@ -201,8 +186,6 @@ header {
     0 0 40px #E5C100; 
 }
   
-
-
     footer {
       background-color: black;
       padding: 20px;
@@ -226,7 +209,7 @@ header {
 
 
     .back-to-top {
-      display: none; /* oculto por defecto */
+      display: none; 
       position: fixed;
       bottom: 30px;
       right: 30px;
