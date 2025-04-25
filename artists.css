@@ -30,7 +30,7 @@ header {
     max-width: 1203px; 
     height: auto; 
     min-height: 300px; 
-}
+  }
 
 
 
@@ -44,16 +44,20 @@ header {
 
 
 .artists-intro p {
-    font-size: 25px !important; 
+    font-size: 25px !important;
     font-weight: normal;
-    color: white !important;
     text-align: center;
     max-width: 900px;
     margin: auto;
+    margin-top: 10px !important;
     line-height: 1.6;
-}
-
-
+    gap: 5px;
+    color: white;
+    text-align: center;
+    text-shadow: 
+    0 0 2px rgba(255, 255, 255, 0.6),
+    0 0 3px rgba(255, 255, 255, 0.4);
+  }
 
 .nav-menu {
     list-style: none;
