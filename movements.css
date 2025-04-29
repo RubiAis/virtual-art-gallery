@@ -566,3 +566,7 @@ iframe {
 }
 
 
+.navbar-toggle {
+  display: none !important;
+}
+

@@ -215,3 +215,7 @@ footer {
     transform: translateY(0);
   }
 }
+
+.navbar-toggle {
+  display: none !important;
+}

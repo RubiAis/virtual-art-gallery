@@ -267,7 +267,10 @@ footer {
   }
 
 
-
+  .navbar-toggle {
+    display: none !important;
+  }
+  
 
 
 

@@ -230,3 +230,9 @@ header {
       background-color: #e6c200;
       transform: scale(1.05);
     }
+
+    .navbar-toggle {
+      display: none !important;
+    }
+   
+    
